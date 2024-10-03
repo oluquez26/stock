@@ -1,0 +1,308 @@
+/* Reset de márgenes y relleno para todos los elementos */
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box; /* Mejora el manejo de padding y bordes */
+}
+
+/* Estilo global del body */
+body {
+  display: flex;
+  align-items: center;
+  /* justify-content: flex-start; Alinea el contenido hacia la izquierda */
+  height: 100vh;
+  background-color: #f0f4f8;
+  font-family: "Poppins", sans-serif;
+  /* background-image: url("./imagenes/registroempresa.png"); */
+  background-size: cover;
+  background-position: center;
+}
+
+/* Contenedor principal */
+.principal {
+  display: flex;
+  align-items: center;
+  justify-content: space-between; /* Alinea hacia la izquierda */
+  width: 100%;
+  padding-left: 40px; /* Añade un margen desde la izquierda */
+  padding-bottom: 20px;
+  padding-top: 20px;
+}
+
+.formulario {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  width: 80%;
+  max-width: 450px; /* Fija un ancho máximo adecuado */
+  height: 100%;
+  padding: 40px;
+  background-color: rgba(
+    255,
+    255,
+    255,
+    0.9
+  ); /* Fondo blanco semitransparente */
+  border: 2px solid #e0e0e0;
+  border-radius: 15px;
+  box-shadow: 0 8px 30px rgba(0, 0, 0, 0.1); /* Sombra */
+  text-align: left; /* Alinea texto a la izquierda */
+}
+
+/* div de los botones de registro de empresa */
+.botones {
+  display: flex;
+  align-items: center;
+  gap: 20px;
+  height: 100%;
+  width: auto;
+}
+
+/* Estilo de las label formulario registro de empresa */
+.formulario label {
+  color: #5bcccc; /* Usa código hexadecimal para consistencia */
+  font-weight: 500; /* Añade un poco de grosor a las letras */
+  width: 100%;
+  gap: 3px;
+  text-align: center;
+  font-size: 20px;
+}
+
+.formulario2 {
+  display: flex;
+  align-items: center;
+  justify-content: flex-start; /*Alinea hacia la izquierda */
+  width: 80%;
+  flex-direction: column;
+  gap: 15px;
+  max-width: 450px; /* Fija un ancho máximo adecuado */
+  height: 100%;
+  background-color: rgba(
+    255,
+    255,
+    255,
+    0.9
+  ); /* Fondo blanco semitransparente */
+  border: 2px solid #e0e0e0;
+  border-radius: 15px;
+  box-shadow: 0 8px 30px rgba(0, 0, 0, 0.1); /* Sombra */
+  text-align: left; /* Alinea texto a la izquierda */
+}
+.modos button {
+  color: #0325e7;
+}
+
+h1,
+h2 {
+  color: #5e72e4;
+}
+
+h1 {
+  align-items: center;
+  justify-content: center;
+  text-align: center;
+}
+h2 {
+  padding-top: 10px;
+}
+
+/* Contenedor del formulario */
+
+/* Estilo de los inputs */
+.formulario input {
+  width: 100%;
+  border: 1px solid #ccc;
+  border-radius: 5px;
+  font-size: 25px;
+  text-align: center;
+  color: #0325e7;
+  transition: border-color 0.3s ease;
+}
+
+/* Estilo al hacer focus en los inputs */
+.formulario input:focus {
+  border-color: #5e72e4;
+  outline: none;
+}
+
+select {
+  width: 100%;
+  border: 1px solid #ccc;
+  border-radius: 5px;
+  font-size: 20px;
+  text-align: center;
+  color: #0325e7;
+  transition: border-color 0.3s ease;
+}
+
+/* Contenedor para botones */
+
+#limpiar {
+  padding: 3px 15px;
+  background-color: rgb(240, 244, 4);
+  border: none;
+  border-radius: 6px;
+  color: black;
+  font-size: 20px;
+  height: 40px;
+  width: 130px;
+  font-family: sans-serif;
+  justify-content: center;
+  color: red;
+  font-family: sans-serif;
+}
+
+#limpiar:hover {
+  color: rgb(240, 244, 4);
+  background-color: rgba(239, 12, 12, 0.805);
+}
+#claro {
+  padding: 3px 15px;
+  background-color: rgb(182, 217, 255);
+  border: none;
+  border-radius: 6px;
+  color: black;
+  font-size: 15px;
+  font-family: "Gill Sans", "Gill Sans MT", Calibri, "Trebuchet MS", sans-serif;
+}
+
+#oscuro {
+  padding: 3px 15px;
+  background-color: rgb(235, 4, 43);
+  color: white;
+  border: none;
+  border-radius: 6px;
+  font-size: 105px;
+  font-family: "Gill Sans", "Gill Sans MT", Calibri, "Trebuchet MS", sans-serif;
+}
+
+.botones button {
+  display: flex;
+  align-items: center;
+  color: rgb(19, 239, 19);
+  padding: 3px 15px;
+  background-color: #5e72e4;
+  border: none;
+  border-radius: 6px;
+  justify-content: center;
+  font-size: 20px;
+  height: 40px;
+  width: 130px;
+  font-family: sans-serif;
+}
+.botones button:hover {
+  color: rgb(42, 78, 239);
+  background-color: #79ee81;
+}
+
+#guardar {
+  display: flex;
+  align-items: center;
+  color: rgb(19, 239, 19);
+  padding: 3px 15px;
+  background-color: #5e72e4;
+  border: none;
+  border-radius: 6px;
+  justify-content: center;
+  font-size: 20px;
+  height: 40px;
+  width: 130px;
+  font-family: sans-serif;
+}
+
+#guardar:hover {
+  color: rgb(42, 78, 239);
+  background-color: #79ee81;
+}
+#guardar:focus {
+  color: rgb(239, 42, 42);
+  background-color: #00ff73;
+}
+
+/* Estilo de los títulos */
+.container h2 {
+  color: #5e72e4;
+  padding-bottom: 20px;
+  text-align: center;
+}
+
+/* Estilos para los botones claros y oscuros */
+#claro {
+  background-color: rgb(179, 209, 241);
+  border: none;
+  border-radius: 6px;
+  justify-content: center;
+  font-size: 20px;
+  height: 50px;
+  width: 110px;
+  font-family: sans-serif;
+  color: black;
+  font-family: "Gill Sans", "Gill Sans MT", Calibri, "Trebuchet MS", sans-serif;
+}
+
+#oscuro {
+  background-color: rgb(56, 62, 67);
+  color: white;
+  border: none;
+  border-radius: 6px;
+  font-size: 20px;
+  height: 50px;
+  width: 110px;
+  font-family: "Gill Sans", "Gill Sans MT", Calibri, "Trebuchet MS", sans-serif;
+}
+
+#randon {
+  background-color: rgb(228, 231, 233);
+  color: rgb(205, 60, 234);
+  border: none;
+  border-radius: 6px;
+  font-size: 20px;
+  height: 50px;
+  width: 100px;
+  font-family: "Gill Sans", "Gill Sans MT", Calibri, "Trebuchet MS", sans-serif;
+}
+
+.rs {
+  color: #5bcccc;
+  height: 33px;
+  border: 1px solid #d1d9e6;
+  border-radius: 8px;
+  width: 100%;
+  max-width: 300px;
+
+  background-color: #f8f9fc;
+  transition: border-color 0.3s ease;
+}
+
+.rs:focus {
+  outline: none;
+  border-color: #5e72e4;
+}
+
+.menu {
+  display: flex;
+  gap: 50px;
+  align-items: center;
+  justify-content: center;
+  width: 100%;
+}
+
+.menu-item {
+  width: 900;
+  height: 900px;
+  overflow: hidden;
+  border-radius: 15px;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+  cursor: pointer;
+  transition: transform 0.3s;
+}
+
+.menu-item:hover {
+  transform: scale(1.05);
+}
+
+.menu-item img {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+}

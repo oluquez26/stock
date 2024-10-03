@@ -1,0 +1,60 @@
+<!DOCTYPE html>
+<html lang=" es">
+  <head>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" href="./style.css" />
+    <title>calcular sueldo</title>
+    <!-- <style>   
+    body {
+      background-image: url("./imagenes/registroempresa.png")
+    }</style> -->
+  </head>
+  <body>
+    <div class="principal">
+      <div class="formulario" id="form">
+        <h1>Registro de Usuario</h1>
+        <br>
+        <label>Primer Nombre<input type="text" id="nombreuno" requerid/></label> <br />
+        <label>Segundo Nombre<input type="text" id="nombredos" requerid/></label> <br />
+        <label>Primer Apellido<input type="text" id="apellidouno" requerid/></label> <br />
+        <label>Segundo Apellido<input type="text" id="apellidodos" requerid/></label> <br />
+        <label>Tipo documento <select>
+            <option selected="true" disabled="disabled" >Ninguno</option>
+            <option id="cc">Cedula de ciudadadina</option><br />
+            <option id="ce">Cedula de Extrangeria</option><br />
+            <option id="pa">Pasaporte</option><br />
+            </select>
+        </label> <br>
+        <label for="numerodocumento">Numero de Documento <input type="number" id="numerodocumento"></label> <br>
+        <label> Fecha de Nacimiento <input type="date" id="direccion"/></label><br />
+        
+        
+        <label> Direccion <input type="text" id="direccion"/></label><br />
+        <label> Correo Electronico<input type="email"/ id="email"></label><br />
+        <label> Telefono<input type="number"  id="telefono" required /></label><br />
+        <label> Departamente<select>
+          <option selected="true" disabled="disabled">Ninguno</option>
+          <option id="atlantico">Atlantico</option>
+        </select></label><br />
+        <label> Municipio <select>
+          <option selected="true" disabled="disabled" >Ninguno</option>
+          <option id="Barranquilla">Barranquilla</option>
+        </select></label><br />
+        
+        <div class="botones">
+          <button onclick="registrar()">Registrar</button>
+          <button id="limpiar" onclick="limpiar()">Limpiar</button>
+          
+        </div>
+        
+      </div>
+     
+    </div>
+      
+    </div>
+
+  </body>
+  <script src="./main.js">
+  </script>
+</html>
